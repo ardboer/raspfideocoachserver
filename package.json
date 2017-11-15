@@ -1,0 +1,18 @@
+{
+  "engines": {
+    "node": ">= 4.0"
+  },
+  "dependencies": {
+    "deployd": "^1.1.1",
+    "dpd-clientlib": "^0.0.1",
+    "dpd-dashboard": "^0.0.1",
+    "dpd-event": "0.0.2",
+    "dpd-event-extension": "0.0.3",
+    "moment": "^2.19.1",
+    "node-cmd": "^3.0.0"
+  },
+  "devDependencies": {
+    "dpd-clientlib": "0.0.1",
+    "dpd-dashboard": "0.0.1"
+  }
+}

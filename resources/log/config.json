@@ -1,0 +1,77 @@
+{
+	"type": "Collection",
+	"properties": {
+		"timestamp": {
+			"name": "timestamp",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "timestamp",
+			"order": 0
+		},
+		"camera": {
+			"name": "camera",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "camera",
+			"order": 1
+		},
+		"activeFilename": {
+			"name": "activeFilename",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "activeFilename",
+			"order": 2
+		},
+		"userid": {
+			"name": "userid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "userid",
+			"order": 3
+		},
+		"clipFilename": {
+			"name": "clipFilename",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "clipFilename",
+			"order": 4
+		},
+		"description": {
+			"name": "description",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "description",
+			"order": 5
+		},
+		"ready": {
+			"name": "ready",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": false,
+			"id": "ready",
+			"order": 6
+		},
+		"rendertimestamp": {
+			"name": "rendertimestamp",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "rendertimestamp",
+			"order": 7
+		},
+		"title": {
+			"name": "title",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "title",
+			"order": 8
+		}
+	}
+}

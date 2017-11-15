@@ -1,0 +1,296 @@
+ffmpeg version 3.3.4 Copyright (c) 2000-2017 the FFmpeg developers
+  built with Apple LLVM version 9.0.0 (clang-900.0.37)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.3.4 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-libmp3lame --enable-libx264 --enable-libxvid --enable-opencl --enable-videotoolbox --disable-lzma --enable-vda
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+Input #0, mpjpeg, from 'http://192.168.178.25/live':
+  Duration: N/A, bitrate: N/A
+    Stream #0:0: Video: mjpeg, yuvj420p(pc, bt470bg/unknown/unknown), 640x480 [SAR 72:72 DAR 4:3], 25 tbr, 25 tbn, 25 tbc
+File 'recordings/1507312822723.mkv' already exists. Overwrite ? [y/N] Not overwriting - exiting
+ffmpeg version 3.3.4 Copyright (c) 2000-2017 the FFmpeg developers
+  built with Apple LLVM version 9.0.0 (clang-900.0.37)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.3.4 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-libmp3lame --enable-libx264 --enable-libxvid --enable-opencl --enable-videotoolbox --disable-lzma --enable-vda
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+Input #0, mpjpeg, from 'http://192.168.178.25/live':
+  Duration: N/A, bitrate: N/A
+    Stream #0:0: Video: mjpeg, yuvj420p(pc, bt470bg/unknown/unknown), 640x480 [SAR 72:72 DAR 4:3], 25 tbr, 25 tbn, 25 tbc
+File 'recordings/1507312822723.mkv' already exists. Overwrite ? [y/N] Not overwriting - exiting
+ffmpeg version 3.3.4 Copyright (c) 2000-2017 the FFmpeg developers
+  built with Apple LLVM version 9.0.0 (clang-900.0.37)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.3.4 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-libmp3lame --enable-libx264 --enable-libxvid --enable-opencl --enable-videotoolbox --disable-lzma --enable-vda
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+Input #0, mpjpeg, from 'http://192.168.178.25/live':
+  Duration: N/A, bitrate: N/A
+    Stream #0:0: Video: mjpeg, yuvj420p(pc, bt470bg/unknown/unknown), 640x480 [SAR 72:72 DAR 4:3], 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (mjpeg (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+No pixel format specified, yuvj420p for H.264 encoding chosen.
+Use -pix_fmt yuv420p for compatibility with outdated media players.
+[libx264 @ 0x7f845b00b000] using SAR=1/1
+[libx264 @ 0x7f845b00b000] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x7f845b00b000] profile High, level 3.0
+[libx264 @ 0x7f845b00b000] 264 - core 148 r2795 aaa9aa8 - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=20 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, matroska, to 'recordings/1507312822722x.mkv':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0: Video: h264 (libx264) (H264 / 0x34363248), yuvj420p(pc), 640x480 [SAR 72:72 DAR 4:3], q=-1--1, 20 fps, 1k tbn, 20 tbc
+    Metadata:
+      encoder         : Lavc57.89.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+Past duration 0.799995 too large
+Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=   13 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=1 speed=   0x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=   25 fps= 17 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=4 speed=   0x    Past duration 0.999992 too large
+    Last message repeated 3 times
+frame=   41 fps= 21 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=8 speed=   0x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=   52 fps= 21 q=28.0 size=       1kB time=-00:00:00.04 bitrate=N/A dup=0 drop=11 speed=N/A    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=   61 fps= 20 q=28.0 size=       1kB time=00:00:00.40 bitrate=  15.0kbits/s dup=0 drop=13 speed=0.134x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=   73 fps= 21 q=28.0 size=       1kB time=00:00:01.00 bitrate=   6.0kbits/s dup=0 drop=16 speed=0.286x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=   83 fps= 21 q=28.0 size=       1kB time=00:00:01.50 bitrate=   4.0kbits/s dup=0 drop=19 speed=0.374x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=   93 fps= 20 q=28.0 size=       1kB time=00:00:02.00 bitrate=   3.0kbits/s dup=0 drop=21 speed=0.44x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  101 fps= 19 q=28.0 size=       1kB time=00:00:02.40 bitrate=   2.5kbits/s dup=0 drop=23 speed=0.449x    Past duration 0.999992 too large
+    Last message repeated 4 times
+frame=  119 fps= 20 q=28.0 size=       1kB time=00:00:03.30 bitrate=   1.8kbits/s dup=0 drop=28 speed=0.563x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  129 fps= 20 q=28.0 size=       1kB time=00:00:03.80 bitrate=   1.6kbits/s dup=0 drop=30 speed=0.596x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  140 fps= 20 q=28.0 size=       1kB time=00:00:04.35 bitrate=   1.4kbits/s dup=0 drop=33 speed=0.63x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  150 fps= 20 q=28.0 size=       1kB time=00:00:04.85 bitrate=   1.2kbits/s dup=0 drop=36 speed=0.653x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  161 fps= 20 q=28.0 size=     358kB time=00:00:05.40 bitrate= 542.4kbits/s dup=0 drop=38 speed=0.681x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  171 fps= 20 q=28.0 size=     358kB time=00:00:05.90 bitrate= 496.4kbits/s dup=0 drop=41 speed=0.698x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  181 fps= 20 q=28.0 size=     358kB time=00:00:06.40 bitrate= 457.7kbits/s dup=0 drop=43 speed=0.694x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  187 fps= 19 q=28.0 size=     358kB time=00:00:06.70 bitrate= 437.2kbits/s dup=0 drop=45 speed=0.683x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  201 fps= 19 q=28.0 size=     358kB time=00:00:07.40 bitrate= 395.8kbits/s dup=0 drop=48 speed=0.715x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  212 fps= 20 q=28.0 size=     358kB time=00:00:07.95 bitrate= 368.4kbits/s dup=0 drop=51 speed=0.732x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  221 fps= 19 q=28.0 size=     358kB time=00:00:08.40 bitrate= 348.7kbits/s dup=0 drop=53 speed=0.734x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  233 fps= 20 q=28.0 size=     358kB time=00:00:09.00 bitrate= 325.5kbits/s dup=0 drop=56 speed=0.754x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  244 fps= 20 q=28.0 size=     358kB time=00:00:09.55 bitrate= 306.7kbits/s dup=0 drop=59 speed=0.767x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  253 fps= 20 q=28.0 size=     358kB time=00:00:10.00 bitrate= 292.9kbits/s dup=0 drop=61 speed=0.772x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  260 fps= 19 q=28.0 size=     711kB time=00:00:10.35 bitrate= 562.3kbits/s dup=0 drop=63 speed=0.769x    Past duration 0.999992 too large
+    Last message repeated 3 times
+frame=  274 fps= 20 q=28.0 size=     711kB time=00:00:11.05 bitrate= 526.7kbits/s dup=0 drop=67 speed=0.79x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  285 fps= 20 q=28.0 size=     711kB time=00:00:11.60 bitrate= 501.7kbits/s dup=0 drop=69 speed= 0.8x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  295 fps= 20 q=28.0 size=     711kB time=00:00:12.10 bitrate= 481.0kbits/s dup=0 drop=72 speed=0.806x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  305 fps= 20 q=28.0 size=     840kB time=00:00:12.60 bitrate= 546.1kbits/s dup=0 drop=74 speed=0.811x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  315 fps= 20 q=28.0 size=     840kB time=00:00:13.10 bitrate= 525.3kbits/s dup=0 drop=77 speed=0.817x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  324 fps= 20 q=28.0 size=     840kB time=00:00:13.55 bitrate= 507.8kbits/s dup=0 drop=79 speed=0.82x    Past duration 0.999992 too large
+frame=  329 fps= 19 q=28.0 size=     840kB time=00:00:13.80 bitrate= 498.6kbits/s dup=0 drop=80 speed=0.809x    Past duration 0.999992 too large
+    Last message repeated 3 times
+frame=  344 fps= 20 q=28.0 size=     840kB time=00:00:14.55 bitrate= 472.9kbits/s dup=0 drop=84 speed=0.828x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  354 fps= 20 q=28.0 size=     840kB time=00:00:15.05 bitrate= 457.2kbits/s dup=0 drop=87 speed=0.831x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  365 fps= 20 q=28.0 size=     840kB time=00:00:15.60 bitrate= 441.1kbits/s dup=0 drop=89 speed=0.838x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  375 fps= 20 q=28.0 size=     840kB time=00:00:16.10 bitrate= 427.4kbits/s dup=0 drop=92 speed=0.841x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  385 fps= 20 q=28.0 size=     840kB time=00:00:16.60 bitrate= 414.5kbits/s dup=0 drop=94 speed=0.844x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  396 fps= 20 q=28.0 size=     840kB time=00:00:17.15 bitrate= 401.2kbits/s dup=0 drop=97 speed=0.85x    Past duration 0.999992 too large
+frame=  401 fps= 19 q=28.0 size=     840kB time=00:00:17.40 bitrate= 395.5kbits/s dup=0 drop=98 speed=0.839x    Past duration 0.999992 too large
+frame=  402 fps= 19 q=28.0 size=    1210kB time=00:00:17.45 bitrate= 568.1kbits/s dup=0 drop=99 speed=0.817x    frame=  402 fps= 18 q=-1.0 Lsize=    1398kB time=00:00:19.95 bitrate= 574.0kbits/s dup=0 drop=99 speed=0.908x    
+video:1394kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.260414%
+[libx264 @ 0x7f845b00b000] frame I:2     Avg QP:20.35  size: 25606
+[libx264 @ 0x7f845b00b000] frame P:101   Avg QP:21.83  size:  8417
+[libx264 @ 0x7f845b00b000] frame B:299   Avg QP:23.39  size:  1758
+[libx264 @ 0x7f845b00b000] consecutive B-frames:  0.7%  0.0%  0.7% 98.5%
+[libx264 @ 0x7f845b00b000] mb I  I16..4: 10.7% 88.8%  0.5%
+[libx264 @ 0x7f845b00b000] mb P  I16..4:  2.4% 18.8%  0.0%  P16..4: 34.2% 10.6% 11.4%  0.0%  0.0%    skip:22.5%
+[libx264 @ 0x7f845b00b000] mb B  I16..4:  0.5%  7.7%  0.0%  B16..8: 24.2%  2.3%  0.3%  direct: 1.6%  skip:63.5%  L0:48.8% L1:44.6% BI: 6.6%
+[libx264 @ 0x7f845b00b000] 8x8 transform intra:91.5% inter:96.0%
+[libx264 @ 0x7f845b00b000] coded y,uvDC,uvAC intra: 69.4% 63.1% 6.2% inter: 12.2% 20.7% 1.5%
+[libx264 @ 0x7f845b00b000] i16 v,h,dc,p: 14% 30%  8% 49%
+[libx264 @ 0x7f845b00b000] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 15% 18% 62%  1%  1%  1%  1%  1%  1%
+[libx264 @ 0x7f845b00b000] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20% 14% 15% 10%  9%  9%  7%  9%  8%
+[libx264 @ 0x7f845b00b000] i8c dc,h,v,p: 46% 31% 22%  2%
+[libx264 @ 0x7f845b00b000] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7f845b00b000] ref P L0: 38.5%  5.5% 38.3% 17.7%
+[libx264 @ 0x7f845b00b000] ref B L0: 58.5% 30.5% 10.9%
+[libx264 @ 0x7f845b00b000] ref B L1: 87.0% 13.0%
+[libx264 @ 0x7f845b00b000] kb/s:567.97
+Exiting normally, received signal 2.
+ffmpeg version 3.3.4 Copyright (c) 2000-2017 the FFmpeg developers
+  built with Apple LLVM version 9.0.0 (clang-900.0.37)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.3.4 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-libmp3lame --enable-libx264 --enable-libxvid --enable-opencl --enable-videotoolbox --disable-lzma --enable-vda
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+Input #0, mpjpeg, from 'http://192.168.178.25/live':
+  Duration: N/A, bitrate: N/A
+    Stream #0:0: Video: mjpeg, yuvj420p(pc, bt470bg/unknown/unknown), 640x480 [SAR 72:72 DAR 4:3], 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (mjpeg (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+No pixel format specified, yuvj420p for H.264 encoding chosen.
+Use -pix_fmt yuv420p for compatibility with outdated media players.
+[libx264 @ 0x7fe72300c400] using SAR=1/1
+[libx264 @ 0x7fe72300c400] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x7fe72300c400] profile High, level 3.0
+[libx264 @ 0x7fe72300c400] 264 - core 148 r2795 aaa9aa8 - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=20 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, matroska, to 'recordings/1507312822722xx.mkv':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0: Video: h264 (libx264) (H264 / 0x34363248), yuvj420p(pc), 640x480 [SAR 72:72 DAR 4:3], q=-1--1, 20 fps, 1k tbn, 20 tbc
+    Metadata:
+      encoder         : Lavc57.89.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+Past duration 0.799995 too large
+Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=   14 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=2 speed=   0x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=   25 fps= 24 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=4 speed=   0x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=   35 fps= 22 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=7 speed=   0x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=   45 fps= 22 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=9 speed=   0x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=   56 fps= 22 q=28.0 size=       1kB time=00:00:00.15 bitrate=  39.7kbits/s dup=0 drop=12 speed=0.0581x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=   66 fps= 21 q=28.0 size=       1kB time=00:00:00.65 bitrate=   9.2kbits/s dup=0 drop=15 speed=0.208x    Past duration 0.999992 too large
+frame=   70 fps= 15 q=28.0 size=       1kB time=00:00:00.85 bitrate=   7.1kbits/s dup=0 drop=16 speed=0.187x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=   81 fps= 15 q=28.0 size=       1kB time=00:00:01.40 bitrate=   4.3kbits/s dup=0 drop=18 speed=0.263x    Past duration 0.999992 too large
+    Last message repeated 3 times
+frame=   95 fps= 16 q=28.0 size=       1kB time=00:00:02.10 bitrate=   2.9kbits/s dup=0 drop=22 speed=0.359x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  105 fps= 16 q=28.0 size=       1kB time=00:00:02.60 bitrate=   2.3kbits/s dup=0 drop=24 speed=0.405x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  117 fps= 17 q=28.0 size=       1kB time=00:00:03.20 bitrate=   1.9kbits/s dup=0 drop=27 speed=0.462x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  127 fps= 17 q=28.0 size=       1kB time=00:00:03.70 bitrate=   1.6kbits/s dup=0 drop=30 speed=0.498x    Past duration 0.999992 too large
+frame=  133 fps= 17 q=28.0 size=       1kB time=00:00:04.00 bitrate=   1.5kbits/s dup=0 drop=31 speed=0.501x    Past duration 0.999992 too large
+    Last message repeated 3 times
+frame=  149 fps= 17 q=28.0 size=       1kB time=00:00:04.80 bitrate=   1.2kbits/s dup=0 drop=35 speed=0.563x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  159 fps= 18 q=28.0 size=     412kB time=00:00:05.30 bitrate= 636.1kbits/s dup=0 drop=38 speed=0.586x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  169 fps= 18 q=28.0 size=     412kB time=00:00:05.80 bitrate= 581.3kbits/s dup=0 drop=40 speed=0.607x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  180 fps= 18 q=28.0 size=     412kB time=00:00:06.35 bitrate= 531.0kbits/s dup=0 drop=43 speed=0.63x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  190 fps= 18 q=28.0 size=     412kB time=00:00:06.85 bitrate= 492.2kbits/s dup=0 drop=46 speed=0.646x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  201 fps= 18 q=28.0 size=     412kB time=00:00:07.40 bitrate= 455.6kbits/s dup=0 drop=48 speed=0.666x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  211 fps= 18 q=28.0 size=     412kB time=00:00:07.90 bitrate= 426.8kbits/s dup=0 drop=51 speed=0.679x    Past duration 0.999992 too large
+frame=  214 fps= 17 q=28.0 size=     412kB time=00:00:08.05 bitrate= 418.8kbits/s dup=0 drop=52 speed=0.624x    frame=  216 fps= 16 q=28.0 size=     412kB time=00:00:08.15 bitrate= 413.7kbits/s dup=0 drop=52 speed=0.605x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  229 fps= 16 q=28.0 size=     412kB time=00:00:08.80 bitrate= 383.2kbits/s dup=0 drop=55 speed=0.628x    Past duration 0.999992 too large
+    Last message repeated 2 times
+frame=  239 fps= 16 q=28.0 size=     412kB time=00:00:09.30 bitrate= 362.6kbits/s dup=0 drop=58 speed=0.641x    Past duration 0.999992 too large
+    Last message repeated 1 times
+frame=  249 fps= 17 q=28.0 size=     412kB time=00:00:09.80 bitrate= 344.1kbits/s dup=0 drop=60 speed=0.65x    Past duration 0.999992 too large
+[mjpeg @ 0x7fe72300a600] overread 8
+[mjpeg @ 0x7fe72300a600] EOI missing, emulating
+av_interleaved_write_frame(): Immediate exit requested
+Error writing trailer of recordings/1507312822722xx.mkv: Immediate exit requested
+frame=  251 fps= 16 q=28.0 Lsize=     412kB time=00:00:10.15 bitrate= 332.2kbits/s dup=0 drop=61 speed=0.64x    
+video:768kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[libx264 @ 0x7fe72300c400] frame I:2     Avg QP:22.40  size: 20688
+[libx264 @ 0x7fe72300c400] frame P:63    Avg QP:22.06  size:  8895
+[libx264 @ 0x7fe72300c400] frame B:186   Avg QP:23.53  size:  1851
+[libx264 @ 0x7fe72300c400] consecutive B-frames:  1.2%  0.0%  0.0% 98.8%
+[libx264 @ 0x7fe72300c400] mb I  I16..4: 10.0% 89.0%  1.0%
+[libx264 @ 0x7fe72300c400] mb P  I16..4:  2.5% 20.0%  0.1%  P16..4: 34.4% 10.9% 10.8%  0.0%  0.0%    skip:21.3%
+[libx264 @ 0x7fe72300c400] mb B  I16..4:  0.4%  7.6%  0.0%  B16..8: 25.2%  2.4%  0.3%  direct: 1.8%  skip:62.4%  L0:44.5% L1:47.3% BI: 8.2%
+[libx264 @ 0x7fe72300c400] 8x8 transform intra:91.5% inter:94.4%
+[libx264 @ 0x7fe72300c400] coded y,uvDC,uvAC intra: 70.5% 65.2% 7.6% inter: 12.6% 21.1% 1.5%
+[libx264 @ 0x7fe72300c400] i16 v,h,dc,p: 12% 28%  8% 52%
+[libx264 @ 0x7fe72300c400] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 15% 18% 61%  1%  1%  1%  1%  1%  1%
+[libx264 @ 0x7fe72300c400] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 10% 17%  5%  7% 12%  7%  5%  6%
+[libx264 @ 0x7fe72300c400] i8c dc,h,v,p: 47% 30% 21%  2%
+[libx264 @ 0x7fe72300c400] Weighted P-Frames: Y:3.2% UV:1.6%
+[libx264 @ 0x7fe72300c400] ref P L0: 38.0%  7.6% 37.2% 16.3%  0.9%
+[libx264 @ 0x7fe72300c400] ref B L0: 61.8% 28.4%  9.8%
+[libx264 @ 0x7fe72300c400] ref B L1: 88.4% 11.6%
+[libx264 @ 0x7fe72300c400] kb/s:603.09
+Exiting normally, received signal 2.
+ffmpeg version 3.3.4 Copyright (c) 2000-2017 the FFmpeg developers
+  built with Apple LLVM version 9.0.0 (clang-900.0.37)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.3.4 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-libmp3lame --enable-libx264 --enable-libxvid --enable-opencl --enable-videotoolbox --disable-lzma --enable-vda
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+ffmpeg version 3.3.4 Copyright (c) 2000-2017 the FFmpeg developers
+  built with Apple LLVM version 9.0.0 (clang-900.0.37)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.3.4 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-libmp3lame --enable-libx264 --enable-libxvid --enable-opencl --enable-videotoolbox --disable-lzma --enable-vda
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+deployd CLI version 0.0.2
+starting deployd
+deployd CLI v2.0.2 is available.
+
+listening on port 2403
+type help for a list of commands
+dpd > 

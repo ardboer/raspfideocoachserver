@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="/dpd.js" type="text/javascript"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Welcome to Deployd!</h1>
+  <p>You've just created a Deployd app. You can add front-end files in the <code>public</code> folder.</p>
+  <p>If you're new to Deployd, have a look at the <a href="http://docs.deployd.com/docs/getting-started/what-is-deployd.html">Getting Started Guide</a> or <a href="http://docs.deployd.com/docs/getting-started/your-first-api.html">Hello World Tutorial</a>.</p>
+  <img width=600 src="http://192.168.178.25/live"/>
+  <div>
+    <button onclick="createClip()">Create clip</button>
+    <button onclick="startRecording()">Record stream</button>
+    <button onclick="stopRecording()">Stop recording</button>
+  </div>
+  <div class="videos"></div>
+</body>
+</html>
+<script>
+function startRecording() {
+  $.post(
+    "http://localhost:2403/recording/start", { ip:"http://192.168.178.25/live" } ,
+    function(data) {
+       console.log(data);
+    }).fail(function(error){
+      alert(error.responseJSON.message)
+    });
+}
+function stopRecording() {
+  $.get(
+    "http://localhost:2403/recording/stop",
+    function(data) {
+       console.log(data);
+    }).fail(function(error){
+      alert(error.responseJSON.message)
+    });
+}
+function createClip() {
+  $.get(
+    "http://localhost:2403/recording/log?durationSeconds=15&beforeSeconds=15",
+    function(data) {
+       console.log(data);
+       listClips();
+    }).fail(function(error){
+      alert(error.responseJSON.message)
+    });
+}
+dpd.on('renderDone', function(post) {
+    console.log("renderDone", post)
+    listClips()
+});
+function listClips() {
+  $(".videos").empty();
+  dpd.log.get({$sort: {timestamp: -1}},function(result,error){
+    result.map(function(item,index){
+        if(item.ready){
+          var rendertime = (item.rendertimestamp - item.timestamp) / 1000
+          var video = '<div><h1>'+item.id+'</h1><video width="320" height="240" controls>'
+          video += '<source src="clips/'+item.clipFilename+'" type="video/mp4">'
+          video += 'Your browser does not support the video tag.'
+          video += '</video><h3>Render time '+rendertime+'</div>'
+        }
+        else {
+          var video = '<div><h1>'+item.id+' pending rendering..<h1><div>'
+        }
+        $(".videos").append(video);
+    })
+  })
+}
+listClips();
+</script>
