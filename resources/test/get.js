@@ -5,4 +5,5 @@ var exec = require('child_process').exec;
                     var execute = exec(command, {maxBuffer: 1024 * 12000});
                     var now = new Date().getTime();
 emit('renderDone', 'Done');
+
 setResult(now.toString())

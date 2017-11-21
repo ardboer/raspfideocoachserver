@@ -36,7 +36,8 @@ if (action === 'stop'){
                 if(data.length > 0){
                     data.map(function(item,index){
                        cmd.run('kill -9 '+item.pid1); 
-                       cmd.run('rm recordings/*.mp4'); 
+                       cmd.run('rm recordings/*.h264'); 
+                       cmd.run('sudo clear > /dev/tty1'); 
                     });
                     setResult("stopped all recordings")
                 }
@@ -50,6 +51,7 @@ if (action === 'stop'){
 else if (action === 'log'){
                         // set backintime seconds and duration
         var durationSeconds = query.durationSeconds || 15
+        var user = query.user || 'unknown'
         getStatus.then(function(status){
             console.log(status);
             if(status.length < 1){
@@ -65,6 +67,7 @@ else if (action === 'log'){
                 }
                 dpd.log.post(log,function(result,error){
                     if(error) cancel(error);
+                    // console.log(error)
                     emit('clipCreated', 'Done')
                     console.log(result)
                     
@@ -81,7 +84,7 @@ else if (action === 'log'){
                         var execute = exec(command, {maxBuffer: 1024 * 12000});
                         execute.on('close', function(code) {
                             console.log('closing code: ' + code);
-                            dpd.log.put(id, {ready:true, rendertimestamp: new Date().getTime()},function(result,error){
+                            dpd.log.put(id, {user:user, ready:true, rendertimestamp: new Date().getTime()},function(result,error){
                             if(result){
                                 emit('clipRendered', 'Done');
                             }

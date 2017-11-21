@@ -72,6 +72,14 @@
 			"required": false,
 			"id": "title",
 			"order": 8
+		},
+		"user": {
+			"name": "user",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "user",
+			"order": 9
 		}
 	}
 }

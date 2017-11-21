@@ -3,5 +3,5 @@ if(ctx.method == 'GET'){
     query.timestamp = {$gte: 1507579102787}
 }
 if(ctx.method == 'PUT'){
-    // cancel(query)
+    console.log(query)
 }

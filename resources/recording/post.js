@@ -5,8 +5,8 @@ var cmd = require('node-cmd');
 var logSession = function(datetime){
     console.log("log session"+datetime)
     dpd.recsessions.post({datetime:datetime,
-                       description: query.description || "none",
-                       title: query.title || "none"
+                       description: body.params.description || "none",
+                       title: body.params.title || "none"
     },function(result,error){
         console.log("ERRRRRRORRRRR:")
         console.log(error)
@@ -48,14 +48,19 @@ if(action === 'start'){
                     // remove all old clips
                     console.log('123')
                     var exec = require('child_process').exec;
-                    var command = 'rm recordings/*.h264';
+                    var command = 'rm recordings/*.h263';
+                    var execute = exec(command, {maxBuffer: 1024 * 12000});
+                    var command = 'sudo clear > /dev/tty1';
                     var execute = exec(command, {maxBuffer: 1024 * 12000});
                     var now = new Date().getTime();
                     console.log('456')
+                    cmd.run('sudo clear > /dev/tty1'); 
                     var ip = body.params.ip || 'http://192.168.178.25/live';
                     // var cmdx = 'nohup ffmpeg -i '+ip+' -vcodec copy recordings/'+now+'.mkv &';
                     // var cmdx = 'ffmpeg -i '+ip+' -c copy -f segment -segment_time 1 -reset_timestamps 1 recordings/clip%03d.mp4'
-                    var cmdx = 'raspivid -fps 25 -g 25 -b 3000000 -sg 1000 -t 0 -o recordings/clip%03d.h264'
+                    var cmdx = 'raspivid -sg 1000 -t 0 -o recordings/clip%03d.h264'
+                    // var cmdx = 'ffmpeg -f v4l2 -i /dev/video1 -f segment -segment_time 1 -reset_timestamps 1 -vcodec copy recordings/clip%03d.mp4'
+                    // var cmdx = 'v4l2-ctl --list-devices'
                     console.log(cmdx)
                     cmd.run(cmdx);
                     logSession(now)

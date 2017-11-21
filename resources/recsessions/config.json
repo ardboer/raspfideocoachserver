@@ -40,6 +40,14 @@
 			"required": false,
 			"id": "logs",
 			"order": 4
+		},
+		"title": {
+			"name": "title",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "title",
+			"order": 5
 		}
 	}
 }
